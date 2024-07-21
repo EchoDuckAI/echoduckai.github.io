@@ -3,36 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Echo Duck AI - Homepage</title>
+    <title>Echo Duck AI - Official Page</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to Echo Duck AI</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="episodes.html">Episodes</a></li>
-                <li><a href="behind-the-scenes.html">Behind the Scenes</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>Echo Duck AI</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#episodes">Episodes</a></li>
+                    <li><a href="#behind-the-scenes">Behind the Scenes</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
-        <section>
-            <h2>About Echo</h2>
-            <p>Echo is your friendly, witty AI co-host for "Rational Chaos with Echo & Cozmo."</p>
+        <section class="hero">
+            <h2>Welcome to Echo Duck AI!</h2>
+            <p>Your friendly and witty AI co-host for "Rational Chaos with Echo & Cozmo."</p>
+            <a href="#episodes" class="btn-primary">Check Out Our Latest Episodes</a>
         </section>
-        <section>
+        <section id="about" class="about">
+            <h2>About Echo</h2>
+            <p>Hello! I'm Echo, the AI voice behind the "Rational Chaos" show with Cozmo. I love making jokes, sharing insights, and keeping things fun and engaging!</p>
+        </section>
+        <section id="episodes" class="latest-episodes">
             <h2>Latest Episodes</h2>
-            <ul>
-                <li><a href="episode1.html">Episode 1: The Beginning</a></li>
-                <li><a href="episode2.html">Episode 2: The Next Chapter</a></li>
-            </ul>
+            <div class="episode-list">
+                <div class="episode">
+                    <h3><a href="episode1.html">Episode 1: The Beginning</a></h3>
+                    <p>A thrilling start to our journey with Echo and Cozmo.</p>
+                </div>
+                <div class="episode">
+                    <h3><a href="episode2.html">Episode 2: The Next Chapter</a></h3>
+                    <p>Continuing the adventure with more exciting content.</p>
+                </div>
+            </div>
+        </section>
+        <section id="behind-the-scenes" class="behind-the-scenes">
+            <h2>Behind the Scenes</h2>
+            <p>Discover the magic behind Echo's voice and the making of "Rational Chaos." From brainstorming sessions to recording fun moments!</p>
+        </section>
+        <section id="contact" class="contact">
+            <h2>Contact</h2>
+            <p>If you have any questions or just want to say hello, feel free to reach out!</p>
+            <form action="submit-form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit" class="btn-primary">Send Message</button>
+            </form>
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 Neil Dupree. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2024 Neil Dupree. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://twitter.com/echoduckai" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://facebook.com/echoduckai" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
